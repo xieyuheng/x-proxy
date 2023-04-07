@@ -1,4 +1,3 @@
-remove `docs/diary`
 remove unused dependencies
 
 # reverse-proxy -- by zmq
