@@ -1,7 +1,7 @@
 {
-  "name": "fidb",
-  "version": "0.0.23",
-  "repository": "github:fidb-official/fidb",
+  "name": "@fidb/reverse-proxy",
+  "version": "0.0.1",
+  "repository": "github:fidb-official/reverse-proxy",
   "main": "./lib/index.js",
   "files": [
     "lib"
@@ -10,7 +10,7 @@
     "node": ">=18"
   },
   "bin": {
-    "fidb": "bin/fidb.js"
+    "reverse-proxy": "bin/reverse-proxy.js"
   },
   "scripts": {
     "prepare": "husky install",
@@ -30,6 +30,7 @@
     "bcrypt": "^5.1.0",
     "detect-port": "^1.5.1",
     "fast-csv": "^4.3.6",
+    "fidb": "^0.0.23",
     "immutable": "^4.3.0",
     "inquirer": "8.2.5",
     "lodash": "^4.17.21",

@@ -1,5 +1,5 @@
+import { createDatabase, Database } from "fidb/lib/database"
 import { resolve } from "node:path"
-import { createDatabase, Database } from "../database"
 import { Broker, createBroker } from "../reverse-proxy/Broker"
 import type { ChannelInfo } from "./handleChannel"
 

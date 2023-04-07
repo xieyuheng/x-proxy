@@ -1,6 +1,6 @@
+import { createDatabase } from "fidb/lib/database"
+import * as Db from "fidb/lib/db"
 import { env } from "../command-line/env"
-import { createDatabase } from "../database"
-import * as Db from "../db"
 import { isJsonObject } from "../utils/Json"
 import { stringTrimEnd } from "../utils/stringTrimEnd"
 

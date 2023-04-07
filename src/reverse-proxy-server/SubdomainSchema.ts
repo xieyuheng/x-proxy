@@ -1,5 +1,5 @@
 import ty from "@xieyuheng/ty"
-import { DataSchema } from "../data"
+import { DataSchema } from "fidb/lib/data"
 
 export const SubdomainSchema = ty.intersection(
   DataSchema,
