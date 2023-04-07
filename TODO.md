@@ -1,5 +1,3 @@
-remove unused dependencies
-
 # reverse-proxy -- by zmq
 
 [reverse-proxy] support cname -- test this by mimor.app
