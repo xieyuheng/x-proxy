@@ -17,8 +17,8 @@ type Opts = {
   logger?: string
 }
 
-export class ReverseProxyServeCommand extends Command<Args> {
-  name = "reverse-proxy:serve"
+export class ServeCommand extends Command<Args> {
+  name = "serve"
 
   description = "Serve a reverse proxy"
 

@@ -9,8 +9,8 @@ type Opts = {
   logger?: string
 }
 
-export class ReverseProxyWhoamiCommand extends Command<Args> {
-  name = "reverse-proxy:whoami"
+export class WhoamiCommand extends Command<Args> {
+  name = "whoami"
 
   description = "See who I logged in for a given reverse proxy server"
 

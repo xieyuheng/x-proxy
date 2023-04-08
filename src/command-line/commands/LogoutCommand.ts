@@ -5,8 +5,8 @@ import { loggedInDelete } from "../../reverse-proxy-client/loggedInDelete"
 type Args = { url: string }
 type Opts = {}
 
-export class ReverseProxyLogoutCommand extends Command<Args> {
-  name = "reverse-proxy:logout"
+export class LogoutCommand extends Command<Args> {
+  name = "logout"
 
   description = "Logout a user for a given reverse proxy server"
 
