@@ -1,3 +1,12 @@
+rename project to fidb/deployer
+
+update readme
+
+- subdomain based routing
+- website
+- fidb
+- reverse-proxy
+
 # reverse-proxy -- by zmq
 
 [reverse-proxy] support cname -- test this by mimor.app
