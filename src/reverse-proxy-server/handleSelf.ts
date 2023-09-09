@@ -1,5 +1,5 @@
-import { handleData } from "fidb/lib/database-server/handleData"
-import { handlePassword } from "fidb/lib/database-server/handlePassword"
+import { handleData } from "fidb/lib/handle/handleData"
+import { handlePassword } from "fidb/lib/handle/handlePassword"
 import type { Buffer } from "node:buffer"
 import type Http from "node:http"
 import { handlePreflight } from "../server/handlePreflight"

@@ -1,7 +1,7 @@
 import { watch } from "@vue/runtime-core"
 import type { Broker } from "./Broker"
-import { brokerServiceMatch } from "./brokerServiceMatch"
 import type { Service } from "./Service"
+import { brokerServiceMatch } from "./brokerServiceMatch"
 
 export function brokerReactivelyServiceMatch(broker: Broker, service: Service) {
   watch(

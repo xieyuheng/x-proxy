@@ -14,8 +14,9 @@ export async function handleInfo(
         config: db.config
           ? {
               name: db.config.name,
-              description: db.config.description || null,
-              authDirectories: db.config.authDirectories || null,
+            description: db.config.description || null,
+            // TODO
+              // authDirectories: db.config.authDirectories || null,
             }
           : null,
       },

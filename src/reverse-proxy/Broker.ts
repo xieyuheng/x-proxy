@@ -1,6 +1,6 @@
 import * as Zmq from "zeromq"
-import { brokerListen } from "./brokerListen"
 import type { Service } from "./Service"
+import { brokerListen } from "./brokerListen"
 
 export type Broker = {
   backend: Zmq.Router

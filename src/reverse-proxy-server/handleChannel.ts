@@ -1,7 +1,6 @@
 import { ty } from "@xieyuheng/ty"
-import { requestToken } from "fidb/lib/database-server/requestToken"
 import * as Db from "fidb/lib/db"
-import { tokenAssert } from "fidb/lib/token"
+import { requestToken } from "fidb/lib/handle/requestToken"
 import type Http from "node:http"
 import { Unauthorized } from "../errors/Unauthorized"
 import { createService } from "../reverse-proxy/Service"
@@ -25,7 +24,7 @@ export async function handleChannel(
 ): Promise<Json | void> {
   const who = "handleChannel"
 
-  const token = await requestToken(ctx, request)
+  const token = await requestToken(request)
 
   if (request.method === "POST") {
     const schema = ty.object({
@@ -37,7 +36,8 @@ export async function handleChannel(
       await requestJsonObject(request),
     )
 
-    tokenAssert(token, `users/${username}`, "read")
+    // TODO
+    // tokenAssert(ctx.db, token, `users/${username}`, "read")
 
     await assertSubdomainUsable(ctx, subdomain, username)
 
