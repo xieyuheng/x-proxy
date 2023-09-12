@@ -1,4 +1,4 @@
-# Reverse Proxy
+# X Proxy
 
 A reverse proxy to let people host databases and websites on their own machine.
 
@@ -9,10 +9,10 @@ A reverse proxy to let people host databases and websites on their own machine.
 Install it by the following command:
 
 ```sh
-npm install -g @fidb/reverse-proxy
+npm install -g @xieyuheng/x-proxy
 ```
 
-The command line program is called `reverse-proxy`.
+The command line program is called `x-proxy`.
 
 ## Development
 

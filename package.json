@@ -1,7 +1,7 @@
 {
-  "name": "@fidb/reverse-proxy",
+  "name": "@xieyuheng/x-proxy",
   "version": "0.0.3",
-  "repository": "github:fidb-official/reverse-proxy",
+  "repository": "github:xieyuheng/x-proxy",
   "main": "./lib/index.js",
   "files": [
     "lib"
@@ -10,7 +10,7 @@
     "node": ">=18"
   },
   "bin": {
-    "reverse-proxy": "bin/reverse-proxy.js"
+    "x-proxy": "bin/x-proxy.js"
   },
   "scripts": {
     "build": "rm -rf lib; tsc",

@@ -1,10 +1,10 @@
 [Unit]
-Description=FiDB http reverse-proxy server
+Description=FiDB http x-proxy server
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/fidb reverse-proxy:serve --port 443 --port 5108 \
-  --database /databases/reverse-proxy \
+ExecStart=/usr/local/bin/fidb x-proxy:serve --port 443 --port 5108 \
+  --database /databases/x-proxy \
   --domain fidb.app \
   --tls-cert /etc/letsencrypt/live/fidb.app/fullchain.pem \
   --tls-key /etc/letsencrypt/live/fidb.app/privkey.pem
