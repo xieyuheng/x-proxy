@@ -30,7 +30,7 @@ export class WhoamiCommand extends Command<Args> {
       `If no specific url is given,`,
       `list all the logged in usernames.`,
       ``,
-      blue(`  ${runner.name} ${this.name} https://fidb.app`),
+      blue(`  ${runner.name} ${this.name} https://example.com`),
       ``,
     ].join("\n")
   }

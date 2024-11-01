@@ -12,7 +12,7 @@ thus not good.
 
 ```
 fidb database:serve <directory> --port 5108 \
-  --reverse-proxy-server https://fidb.app:5108 \
+  --reverse-proxy-server https://example.com:5108 \
   --reverse-proxy-subdomain pomodoro \
   --reverse-proxy-username xieyuheng \
   --reverse-proxy-password abc
@@ -25,13 +25,13 @@ The database
 served at
 
   http://localhost:5108
-  https://pomodoro.fidb.app:5108
+  https://pomodoro.example.com:5108
 ```
 
 Instead, we should first login to the reverse proxy server.
 
 ```
-fidb reverse-proxy:login https://fidb.app:5108
+fidb reverse-proxy:login https://example.com:5108
 
 
 Prompt for username
@@ -45,7 +45,7 @@ Then in one line
 
 ```
 fidb database:serve <directory> --port 5108
-fidb database:serve <directory> --port 5108 --url https://pomodoro.fidb.app:5108
+fidb database:serve <directory> --port 5108 --url https://pomodoro.example.com:5108
 
 
 The database
@@ -55,17 +55,17 @@ The database
 served at
 
   http://localhost:5108
-  https://pomodoro.fidb.app:5108
+  https://pomodoro.example.com:5108
 ```
 
 ```
 fidb website:serve <directory> --port 8080
-fidb website:serve <directory> --port 8080 --url https://pomodoro.fidb.app
+fidb website:serve <directory> --port 8080 --url https://pomodoro.example.com
 
 Website served at
 
   http://localhost:8080
-  https://pomodoro.fidb.app
+  https://pomodoro.example.com
 ```
 
 About the reverse proxy server itself.
@@ -79,10 +79,10 @@ we also need to specify the domain of reverse proxy server.
 
 ```
 fidb reverse-proxy:serve --port 5108 \
-  --domain fidb.app \
+  --domain example.com \
   --database <directory> \
-  --tls-cert /etc/letsencrypt/live/fidb.app/fullchain.pem \
-  --tls-key /etc/letsencrypt/live/fidb.app/privkey.pem
+  --tls-cert /etc/letsencrypt/live/example.com/fullchain.pem \
+  --tls-key /etc/letsencrypt/live/example.com/privkey.pem
 
 
 The reverse-proxy served at:
@@ -98,10 +98,10 @@ Thus `reverse-proxy:serve` and should support multiple ports.
 
 ```
 fidb reverse-proxy:serve --port 443 --port 5108 \
-  --domain fidb.app \
+  --domain example.com \
   --database <directory> \
-  --tls-cert /etc/letsencrypt/live/fidb.app/fullchain.pem \
-  --tls-key /etc/letsencrypt/live/fidb.app/privkey.pem
+  --tls-cert /etc/letsencrypt/live/example.com/fullchain.pem \
+  --tls-key /etc/letsencrypt/live/example.com/privkey.pem
 ```
 
 Login do not need to specify many ports.
@@ -109,7 +109,7 @@ Login do not need to specify many ports.
 Login one port will login all ports.
 
 ```
-fidb reverse-proxy:login https://fidb.app
+fidb reverse-proxy:login https://example.com
 
 
 Available reverse-proxy ports 443 and 5108

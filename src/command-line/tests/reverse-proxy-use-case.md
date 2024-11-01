@@ -13,24 +13,24 @@ To be able to test this commands we need to:
 - Use node http client, which can mock DNS server,
   instead of using `fetch`.
 
-# fidb.app
+# example.com
 
 ```
 sudo fidb reverse-proxy:serve --port 443 --port 5108 \
   --database ~/fidb-official/fidb-databases/databases/reverse-proxy \
-  --domain fidb.app \
-  --tls-cert /etc/letsencrypt/live/fidb.app/fullchain.pem \
-  --tls-key /etc/letsencrypt/live/fidb.app/privkey.pem
+  --domain example.com \
+  --tls-cert /etc/letsencrypt/live/example.com/fullchain.pem \
+  --tls-key /etc/letsencrypt/live/example.com/privkey.pem
 
-fidb reverse-proxy:login https://fidb.app
+fidb reverse-proxy:login https://example.com
 
 fidb website:serve ~/xieyuheng/pomodoro/dist \
   --cors \
   --rewrite-not-found-to index.html \
   --cache-control-pattern 'assets/**: max-age=31536000' \
-  --public-url https://pomodoro.fidb.app
+  --public-url https://pomodoro.example.com
 
-curl https://pomodoro.fidb.app
+curl https://pomodoro.example.com
 ```
 
 # fidb.cn

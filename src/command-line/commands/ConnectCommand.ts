@@ -30,7 +30,7 @@ export class ConnectCommand extends Command<Args> {
       `The ${blue(this.name)} command takes a local url to a http server and a public url of reverse proxy server,`,
       `and connect them.`,
       ``,
-      blue(`  ${runner.name} ${this.name} --local-url http://localhost:8000 --public-url https://pomodoro.fidb.app`),
+      blue(`  ${runner.name} ${this.name} --local-url http://localhost:8000 --public-url https://pomodoro.example.com`),
       ``,
     ].join("\n")
   }

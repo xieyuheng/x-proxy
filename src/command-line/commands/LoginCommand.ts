@@ -29,7 +29,7 @@ export class LoginCommand extends Command<Args> {
       `and login to it by username and password,`,
       `the returned token will be saved to ~/.fidb/`,
       ``,
-      blue(`  ${runner.name} ${this.name} https://fidb.app`),
+      blue(`  ${runner.name} ${this.name} https://example.com`),
       ``,
     ].join("\n")
   }

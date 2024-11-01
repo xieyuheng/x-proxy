@@ -21,7 +21,7 @@ export class LogoutCommand extends Command<Args> {
       `The ${blue(this.name)} command takes a url of a reverse proxy server,`,
       `and logout the user if any.`,
       ``,
-      blue(`  ${runner.name} ${this.name} https://fidb.app`),
+      blue(`  ${runner.name} ${this.name} https://example.com`),
       ``,
     ].join("\n")
   }

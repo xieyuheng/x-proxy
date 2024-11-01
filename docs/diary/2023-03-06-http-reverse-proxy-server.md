@@ -27,9 +27,9 @@ client <-> reverse proxy server <-> local server
 The reverse proxy server has a domain name (the base domain name),
 and it dispatches request by subdomain name.
 
-For example, take `fidb.app` as the
+For example, take `example.com` as the
 base domain of our reverse proxy server.
-A subdomain might be `xieyuheng.fidb.app`.
+A subdomain might be `xieyuheng.example.com`.
 
 The reverse proxying works as the following:
 

@@ -5,9 +5,9 @@ After=network.target
 [Service]
 ExecStart=/usr/local/bin/fidb x-proxy:serve --port 443 --port 5108 \
   --database /databases/x-proxy \
-  --domain fidb.app \
-  --tls-cert /etc/letsencrypt/live/fidb.app/fullchain.pem \
-  --tls-key /etc/letsencrypt/live/fidb.app/privkey.pem
+  --domain example.com \
+  --tls-cert /etc/letsencrypt/live/example.com/fullchain.pem \
+  --tls-key /etc/letsencrypt/live/example.com/privkey.pem
 Restart=on-failure
 
 [Install]
